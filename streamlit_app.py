@@ -8,7 +8,7 @@ instagram_url = st.text_input("Enter Instagram Post URL:")
 if st.button("Extract Caption"):
     if instagram_url:
 
-        response = requests.post("http://127.0.0.1:5000/extract", data={"instagram_url": instagram_url})
+        response = requests.post("https://your-flask-app-url.com/extract", data={"instagram_url": instagram_url})
         if response.status_code == 200:
             st.success("Caption extracted successfully! You can download it below.")
             st.markdown("[Download Caption](http://localhost:5000/show_caption)")
