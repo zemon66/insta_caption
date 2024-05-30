@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("Instagram Caption Extractor")
+st.title("Instagram Caption Downloader")
 
 instagram_url = st.text_input("Enter Instagram Post URL:")
 
